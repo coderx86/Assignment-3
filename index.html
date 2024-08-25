@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <!-- Google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawsome cdn -->
+    <script src="https://kit.fontawesome.com/b680eebc94.js" crossorigin="anonymous"></script>
     <!-- Tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -21,8 +27,79 @@
         }
       </script>
 </head>
-<body>
-    <header></header>
+<body class="font-manrope">
+    <header>
+      <nav class="navbar bg-base-100 flex justify-between lg:pt-12 lg:pb-10 lg:px-36 px-5 pt-8">
+        <!-- navbar start -->
+        <div>
+          <i class="fa-solid fa-arrow-right -rotate-45 w-8 h-8 bg-[#ABEF5F] rounded-full flex justify-center items-center mr-2"></i>
+          <h2><a href="" class="text-3xl font-bold">Rinterio</a></h2>
+        </div>
+        <!-- navbar center -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-bold" href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- navbar end -->
+        <div class="hidden lg:block lg:flex gap-4">
+          <i class="fa-solid fa-magnifying-glass btn w-12 h-12 bg-[#fff] border rounded-full flex justify-center"></i>
+          <i class="fa-solid fa-cart-shopping btn w-12 h-12 bg-[#fff] border rounded-full flex justify-center"></i>
+          <a href=""class="btn bg-[#ABEF5F] rounded-full font-bold text-xl">
+            Book Consult
+            <i class="fa-solid fa-arrow-right -rotate-45 w-8 h-8 bg-black rounded-full flex justify-center items-center mr-2 text-white"></i>
+          </a>
+        </div>
+        <!-- navbar dropdown -->
+        <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden rounded-full w-12 h-12 border-gray-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] -left-40 mt-3 w-52 p-2 shadow">
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+      </nav>
+      <!-- banner section -->
+       <div class="flex flex-col text-center items-center mb-24">
+        <!-- img -->
+        <div class="mb-6 w-[70%] h-auto">
+          <img class="mx-auto" src="assets/banner.png" alt="">
+        </div>
+        <!-- text -->
+        <div>
+          <h1 class="lg:text-6xl font-bold w-[70%] mb-6 mx-auto text-3xl">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="w-[75%] mb-8 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <a href="" class="btn bg-[#abef5f80] rounded-full w-80 lg:w-52 text-xl">
+            View Details
+            <i class="fa-solid fa-arrow-right -rotate-45 w-8 h-8 bg-[#ABEF5F] rounded-full flex justify-center items-center mr-2"></i>
+          </a>
+        </div>
+       </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
